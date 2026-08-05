@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Héctor Fernández López de Coca — Marketing Digital &amp; Branding</title>
+<meta name="description" content="Portfolio de Héctor Fernández López de Coca, graduado en Marketing, RP y Publicidad (Blanquerna — Ramon Llull). Branding, rebranding, redes sociales y edición audiovisual con apoyo de IA.">
+
+<!-- Favicon monograma inline (sin dependencias externas) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0b0d'/%3E%3Ctext x='50' y='68' font-family='Arial, sans-serif' font-weight='800' font-size='54' fill='%23d7ff3f' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo" aria-label="Volver al inicio">HF<span class="dot">.</span></a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <!-- Futuras secciones (Portfolio, Contacto, etc.): añadir aquí nuevos <li><a> -->
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ===================== HERO ===================== -->
+  <section id="inicio" class="hero">
+
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-lime"></div>
+      <div class="orb orb-coral"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-inner">
+
+      <div class="hero-copy" data-animate>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Marketing Digital · Branding · IA</p>
+
+        <h1 class="hero-title">
+          <span class="line line-main">Ideas que se convierten en marca.</span>
+          <span class="line line-sub">Marketing digital con ojo creativo y herramientas del futuro.</span>
+        </h1>
+
+        <div class="hero-meta">
+          <p class="hero-name">Héctor Fernández López de Coca</p>
+          <p class="hero-role">Graduado en Marketing, RP y Publicidad — Blanquerna, Universidad Ramon Llull</p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#sobre-mi" class="btn btn-primary">
+            <span>Conóceme</span>
+          </a>
+          <span class="availability-pill"><span class="pulse" aria-hidden="true"></span>Disponible para nuevas oportunidades</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame" id="photo-frame" data-tilt>
+          <!--
+            FOTO FINAL DEL PERFIL
+            Ruta esperada: Images/hector.jpg
+            Recomendado: retrato vertical (proporción 3:4), buena luz, mínimo 1200px de alto.
+            Mientras no exista el archivo, se muestra automáticamente el placeholder de abajo.
+          -->
+          <img
+            src="Images/hector.jpg"
+            alt="Retrato de Héctor Fernández López de Coca"
+            class="hero-photo"
+            id="hero-photo"
+            onerror="this.classList.add('is-broken'); document.getElementById('photo-placeholder').classList.add('is-visible');"
+          >
+          <div class="photo-placeholder" id="photo-placeholder">
+            <span class="placeholder-initials" aria-hidden="true">HF</span>
+            <span class="placeholder-mono">Images/hector.jpg</span>
+            <span class="placeholder-hint">↳ coloca aquí el retrato final</span>
+          </div>
+          <span class="frame-corner tl" aria-hidden="true"></span>
+          <span class="frame-corner br" aria-hidden="true"></span>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>BRANDING</span><span class="dash">·</span><span>REBRANDING</span><span class="dash">·</span><span>SOCIAL MEDIA</span><span class="dash">·</span><span>EDICIÓN AUDIOVISUAL</span><span class="dash">·</span><span>IA APLICADA</span><span class="dash">·</span>
+            <span>BRANDING</span><span class="dash">·</span><span>REBRANDING</span><span class="dash">·</span><span>SOCIAL MEDIA</span><span class="dash">·</span><span>EDICIÓN AUDIOVISUAL</span><span class="dash">·</span><span>IA APLICADA</span><span class="dash">·</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la sección Sobre mí">
+      <span class="scroll-cue-line" aria-hidden="true"></span>
+      <span class="scroll-cue-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section id="sobre-mi" class="about">
+    <div class="container about-inner">
+
+      <div class="about-head" data-animate>
+        <span class="section-index">02</span>
+        <h2 class="section-title">Sobre <em>mí</em></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <aside class="about-facts" data-animate>
+          <ul class="facts-list">
+            <li><span class="fact-label">Formación</span><span class="fact-value">Marketing, RP y Publicidad</span></li>
+            <li><span class="fact-label">Universidad</span><span class="fact-value">Blanquerna — Ramon Llull</span></li>
+            <li><span class="fact-label">Especialización</span><span class="fact-value">Marketing digital &amp; branding</span></li>
+            <li><span class="fact-label">Superpoder</span><span class="fact-value">Creatividad + IA aplicada</span></li>
+          </ul>
+        </aside>
+
+        <div class="about-body" data-animate>
+          <p class="about-text">Soy Héctor Fernández López de Coca, graduado en Marketing, RP y Publicidad por Blanquerna (Ramon Llull), especializado en marketing digital: branding, rebranding, optimización de redes sociales y edición de imagen y vídeo apoyada en IA. Combino formación reciente con una mirada creativa y herramientas actualizadas — Photoshop, Premiere e InDesign — para construir marca de forma visual y memorable. Además, integro la IA en todo mi flujo de trabajo, incluyendo la creación y el mantenimiento de páginas web, como esta misma landing page, desarrollada con Claude Code.</p>
+
+          <div class="tools">
+            <span class="tools-label">Herramientas</span>
+            <ul class="tools-list">
+              <li class="tool-pill">Photoshop</li>
+              <li class="tool-pill">Adobe Premiere</li>
+              <li class="tool-pill">Adobe InDesign</li>
+              <li class="tool-pill tool-pill-accent">Claude Code · IA</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Próxima sección prevista: Portfolio (id="portfolio") -->
+  </section>
+
+  <!-- Punto de anclaje preparado para futuras secciones (Portfolio, Contacto...) -->
+
+</main>
+
+<footer class="site-footer" data-animate>
+  <div class="container footer-inner">
+    <p>© 2026 Héctor Fernández López de Coca</p>
+    <p class="footer-note">Diseñado y construido con <span>Claude Code</span></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
