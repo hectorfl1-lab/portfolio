@@ -6,12 +6,12 @@
 <title>Héctor Fernández López de Coca — Marketing Digital &amp; Branding</title>
 <meta name="description" content="Portfolio de Héctor Fernández López de Coca, graduado en Marketing, RP y Publicidad (Blanquerna — Ramon Llull). Branding, rebranding, redes sociales y edición audiovisual con apoyo de IA.">
 
-<!-- Favicon monograma inline (sin dependencias externas) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0b0d'/%3E%3Ctext x='50' y='68' font-family='Arial, sans-serif' font-weight='800' font-size='54' fill='%23d7ff3f' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<!-- Favicon: sello bicolor HF (mismo diseño que el logo del nav/footer), inline, sin dependencias externas -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CclipPath id='r'%3E%3Crect width='100' height='100' rx='22'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23r)'%3E%3Crect width='100' height='100' fill='%2316160f'/%3E%3Cpolygon points='100,0 100,100 0,100' fill='%236e1423'/%3E%3C/g%3E%3Cg stroke='%23f7f5ee' stroke-width='9' stroke-linecap='round' fill='none'%3E%3Cline x1='30' y1='26' x2='30' y2='74'/%3E%3Cline x1='58' y1='26' x2='58' y2='74'/%3E%3Cline x1='30' y1='50' x2='80' y2='50'/%3E%3Cline x1='58' y1='26' x2='80' y2='26'/%3E%3C/g%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,18 +19,44 @@
 
 <a class="skip-link" href="#inicio">Saltar al contenido</a>
 
+<!-- Fondo animado global: visible en cualquier punto de la página -->
+<div class="bg-field" id="bg-field" aria-hidden="true">
+  <span class="bg-blob bg-blob-a"></span>
+  <span class="bg-blob bg-blob-b"></span>
+  <span class="bg-blob bg-blob-c"></span>
+  <span class="bg-blob bg-blob-d"></span>
+  <div class="bg-grid"></div>
+  <span class="bg-shape bg-shape-ring"></span>
+  <span class="bg-shape bg-shape-square"></span>
+  <span class="bg-shape bg-shape-plus"></span>
+</div>
+
 <div class="grain" aria-hidden="true"></div>
 
 <!-- ===================== HEADER / NAV ===================== -->
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href="#inicio" class="logo" aria-label="Volver al inicio">HF<span class="dot">.</span></a>
+    <a href="#inicio" class="logo" aria-label="Volver al inicio — Héctor Fernández López de Coca">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <rect width="100" height="100" fill="#16160f"/>
+        <polygon points="100,0 100,100 0,100" fill="#6e1423"/>
+        <g stroke="#f7f5ee" stroke-width="9" stroke-linecap="round" fill="none">
+          <line x1="30" y1="26" x2="30" y2="74"/>
+          <line x1="58" y1="26" x2="58" y2="74"/>
+          <line x1="30" y1="50" x2="80" y2="50"/>
+          <line x1="58" y1="26" x2="80" y2="26"/>
+        </g>
+      </svg>
+    </a>
 
     <nav class="main-nav" id="main-nav">
       <ul>
         <li><a href="#inicio" class="nav-link">Inicio</a></li>
         <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <!-- Futuras secciones (Portfolio, Contacto, etc.): añadir aquí nuevos <li><a> -->
+        <li><a href="#trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <!-- Futuras secciones: añadir aquí nuevos <li><a> -->
       </ul>
     </nav>
 
@@ -45,12 +71,6 @@
   <!-- ===================== HERO ===================== -->
   <section id="inicio" class="hero">
 
-    <div class="hero-bg" aria-hidden="true">
-      <div class="orb orb-lime"></div>
-      <div class="orb orb-coral"></div>
-      <div class="grid-overlay"></div>
-    </div>
-
     <div class="container hero-inner">
 
       <div class="hero-copy" data-animate>
@@ -58,7 +78,7 @@
 
         <h1 class="hero-title">
           <span class="line line-main">Ideas que se convierten en marca.</span>
-          <span class="line line-sub">Marketing digital con ojo creativo y herramientas del futuro.</span>
+          <span class="line line-sub">Marketing digital con <strong>ojo creativo</strong> y herramientas del futuro.</span>
         </h1>
 
         <div class="hero-meta">
@@ -118,9 +138,12 @@
   <section id="sobre-mi" class="about">
     <div class="container about-inner">
 
-      <div class="about-head" data-animate>
-        <span class="section-index">02</span>
-        <h2 class="section-title">Sobre <em>mí</em></h2>
+      <div class="section-head" data-animate>
+        <div class="section-kicker">
+          <span class="section-index">01</span>
+          <h2 class="section-title">Sobre <em>mí</em></h2>
+        </div>
+        <p class="section-subtitle">Formación, especialización y una forma de trabajar que mezcla creatividad con herramientas nuevas.</p>
       </div>
 
       <div class="about-grid">
@@ -135,7 +158,7 @@
         </aside>
 
         <div class="about-body" data-animate>
-          <p class="about-text">Soy Héctor Fernández López de Coca, graduado en Marketing, RP y Publicidad por Blanquerna (Ramon Llull), especializado en marketing digital: branding, rebranding, optimización de redes sociales y edición de imagen y vídeo apoyada en IA. Combino formación reciente con una mirada creativa y herramientas actualizadas — Photoshop, Premiere e InDesign — para construir marca de forma visual y memorable. Además, integro la IA en todo mi flujo de trabajo, incluyendo la creación y el mantenimiento de páginas web, como esta misma landing page, desarrollada con Claude Code.</p>
+          <p class="about-text">Soy Héctor Fernández López de Coca, <strong>graduado en Marketing, RP y Publicidad por Blanquerna (Ramon Llull)</strong>, especializado en marketing digital: <strong>branding, rebranding, optimización de redes sociales y edición de imagen y vídeo apoyada en IA</strong>. Combino formación reciente con una mirada creativa y herramientas actualizadas — <strong>Photoshop, Premiere e InDesign</strong> — para construir marca de forma visual y memorable. Además, integro la IA en todo mi flujo de trabajo, incluyendo la creación y el mantenimiento de páginas web, como esta misma landing page, desarrollada con <strong>Claude Code</strong>.</p>
 
           <div class="tools">
             <span class="tools-label">Herramientas</span>
@@ -150,19 +173,283 @@
 
       </div>
     </div>
-    <!-- Próxima sección prevista: Portfolio (id="portfolio") -->
   </section>
 
-  <!-- Punto de anclaje preparado para futuras secciones (Portfolio, Contacto...) -->
+  <!-- ===================== TRABAJOS ===================== -->
+  <section id="trabajos" class="work">
+    <div class="container work-inner">
+
+      <div class="section-head" data-animate>
+        <div class="section-kicker">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Trabajos</h2>
+        </div>
+        <p class="section-subtitle">Una selección de proyectos organizados por disciplina. Entra en cada uno para ver el detalle en formato slide.</p>
+      </div>
+
+      <!--
+        Grid de proyectos generado dinámicamente desde js/script.js (array `projects`).
+        Añadir un proyecto nuevo = añadir un objeto al array: título, categoría,
+        descripción y número de slides. Las imágenes se colocan en Images/trabajos/
+        siguiendo el patrón proyecto-{id}-slide-{n}.jpg y aparecen automáticamente
+        en cuanto existen (mismo patrón onerror/fallback que la foto del hero).
+      -->
+      <div class="work-grid" id="work-grid" data-animate></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== HABILIDADES / HERRAMIENTAS ===================== -->
+  <section id="habilidades" class="skills">
+    <div class="container skills-inner">
+
+      <div class="section-head" data-animate>
+        <div class="section-kicker">
+          <span class="section-index">03</span>
+          <h2 class="section-title">Habilidades &amp; <em>herramientas</em></h2>
+        </div>
+        <p class="section-subtitle">El software que uso a diario y las áreas donde más aporto dentro de un proyecto de marca.</p>
+      </div>
+
+      <span class="skills-group-label">Software</span>
+      <div class="skills-grid" data-animate>
+
+        <article class="skill-card">
+          <span class="skill-mono" aria-hidden="true">Ps</span>
+          <h3 class="skill-name">Photoshop</h3>
+          <p class="skill-usage">Diseño y retoque de piezas de branding: logotipos, moodboards y composiciones para redes.</p>
+          <div class="skill-level">
+            <span class="skill-level-dots" aria-hidden="true">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+            </span>
+            <span class="skill-level-label">Avanzado</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-mono" aria-hidden="true">Pr</span>
+          <h3 class="skill-name">Adobe Premiere</h3>
+          <p class="skill-usage">Edición de vídeo para contenido de marca y redes sociales, del corte al color.</p>
+          <div class="skill-level">
+            <span class="skill-level-dots" aria-hidden="true">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span>
+            </span>
+            <span class="skill-level-label">Intermedio</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-mono" aria-hidden="true">Id</span>
+          <h3 class="skill-name">Adobe InDesign</h3>
+          <p class="skill-usage">Maquetación de manuales de marca, dossiers y materiales editoriales de proyecto.</p>
+          <div class="skill-level">
+            <span class="skill-level-dots" aria-hidden="true">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span>
+            </span>
+            <span class="skill-level-label">Intermedio</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-mono" aria-hidden="true">AI</span>
+          <h3 class="skill-name">Claude Code · IA</h3>
+          <p class="skill-usage">Creación y mantenimiento de webs, y apoyo de IA en la edición de imagen y vídeo.</p>
+          <div class="skill-level">
+            <span class="skill-level-dots" aria-hidden="true">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+            </span>
+            <span class="skill-level-label">Avanzado</span>
+          </div>
+        </article>
+
+      </div>
+
+      <span class="skills-group-label">Áreas de trabajo</span>
+      <ul class="skills-tags" data-animate>
+        <li class="tool-pill">Branding</li>
+        <li class="tool-pill">Rebranding</li>
+        <li class="tool-pill">Redes sociales</li>
+        <li class="tool-pill tool-pill-accent">Edición con IA</li>
+        <li class="tool-pill">Estrategia de marca</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="contact">
+    <div class="container contact-inner">
+
+      <div class="section-head" data-animate>
+        <div class="section-kicker">
+          <span class="section-index">04</span>
+          <h2 class="section-title">Hablemos</h2>
+        </div>
+        <p class="section-subtitle">¿Tienes un proyecto de marca en marcha? Escríbeme o reserva directamente una llamada.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card" data-animate>
+
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <div class="contact-value-row">
+              <a href="mailto:hectorfedz11@gmail.com" class="contact-value">hectorfedz11@gmail.com</a>
+              <button type="button" class="copy-btn" id="copy-email-btn" data-email="hectorfedz11@gmail.com">
+                <span id="copy-email-label">Copiar</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-divider"></div>
+
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <div class="contact-value-row">
+              <a href="https://www.linkedin.com/in/hector-fernandez-1325b9412" class="contact-value" target="_blank" rel="noopener">linkedin.com/in/hector-fernandez-1325b9412</a>
+            </div>
+          </div>
+
+          <div class="contact-divider"></div>
+
+          <p class="contact-note">Para un primer contacto, escribe un email. Para hablar del proyecto en detalle, <strong>reserva directamente una llamada</strong>.</p>
+
+          <div class="contact-cta">
+            <a href="https://calendar.app.google/QN1JrgWv65KfNtpm8" class="btn btn-primary" target="_blank" rel="noopener">
+              <span>Reservar una llamada</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="calendar-card" data-animate>
+          <span class="contact-label">Calendario de disponibilidad</span>
+
+          <!--
+            Calendario propio (no es una sincronización real con Google Calendar:
+            este sitio es estático y no tiene backend). Se generan dinámicamente
+            desde js/script.js los próximos meses; los días de lunes a viernes se
+            marcan como "disponibles" siguiendo una regla simple del lado del
+            cliente. Al hacer clic se abre el modal de reserva (#booking-modal).
+          -->
+          <div class="mini-cal" id="mini-cal">
+            <div class="mini-cal-head">
+              <button type="button" class="mini-cal-nav" id="cal-prev" aria-label="Mes anterior">←</button>
+              <p class="mini-cal-month" id="cal-month-label" aria-live="polite"></p>
+              <button type="button" class="mini-cal-nav" id="cal-next" aria-label="Mes siguiente">→</button>
+            </div>
+            <div class="mini-cal-weekdays" aria-hidden="true">
+              <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+            </div>
+            <div class="mini-cal-grid" id="cal-grid" role="grid" aria-label="Días del mes"></div>
+          </div>
+
+          <p class="calendar-fallback-note">Días orientativos (lunes a viernes) — <strong>la disponibilidad real se confirma al finalizar</strong>, ya que esta web no está conectada a mi Google Calendar.</p>
+
+          <a href="https://calendar.app.google/QN1JrgWv65KfNtpm8" class="btn btn-outline calendar-fallback-btn" target="_blank" rel="noopener">
+            <span>Abrir calendario en una pestaña nueva</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 </main>
 
+<!-- ===================== MODAL DE RESERVA ===================== -->
+<div class="booking-modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title" aria-hidden="true" inert>
+  <div class="booking-modal-backdrop" id="booking-modal-backdrop"></div>
+  <div class="booking-modal-dialog">
+    <button type="button" class="booking-modal-close" id="booking-modal-close" aria-label="Cerrar formulario de reserva">✕</button>
+    <div class="booking-modal-body">
+
+      <span class="booking-modal-date-tag" id="booking-modal-date"></span>
+      <h3 class="booking-modal-title" id="booking-modal-title">Solicitar este hueco</h3>
+
+      <div id="booking-form-wrap">
+        <p class="booking-modal-copy">Cuéntame un poco de ti y te dejo listo un email con todo lo necesario. El siguiente paso será confirmar el hueco exacto en Google Calendar.</p>
+
+        <form id="booking-form" novalidate>
+          <div class="form-field" data-field="company">
+            <label for="bf-company">Nombre de la empresa</label>
+            <input type="text" id="bf-company" name="company" autocomplete="organization">
+            <span class="form-error" id="bf-company-error">Este campo es obligatorio.</span>
+          </div>
+          <div class="form-field" data-field="role">
+            <label for="bf-role">Cargo</label>
+            <input type="text" id="bf-role" name="role" autocomplete="organization-title">
+            <span class="form-error" id="bf-role-error">Este campo es obligatorio.</span>
+          </div>
+          <div class="form-field" data-field="name">
+            <label for="bf-name">Nombre</label>
+            <input type="text" id="bf-name" name="name" autocomplete="name">
+            <span class="form-error" id="bf-name-error">Este campo es obligatorio.</span>
+          </div>
+          <div class="form-field" data-field="reason">
+            <label for="bf-reason">Motivo de la cita</label>
+            <textarea id="bf-reason" name="reason" rows="3"></textarea>
+            <span class="form-error" id="bf-reason-error">Este campo es obligatorio.</span>
+          </div>
+
+          <p class="booking-modal-note">Al enviar se abrirá tu app de correo con estos datos y, en una pestaña nueva, el calendario real de Google — confírmame ahí el hueco exacto, que es la única fuente de disponibilidad real.</p>
+
+          <div class="booking-modal-actions">
+            <button type="submit" class="btn btn-primary"><span>Enviar y confirmar hueco</span></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="booking-success" id="booking-success">
+        <p>Tu email y el calendario de Google se han abierto en pestañas/apps nuevas. Confirma ahí el hueco exacto para dejarlo cerrado del todo.</p>
+        <button type="button" class="btn btn-outline" id="booking-success-close"><span>Cerrar</span></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <footer class="site-footer" data-animate>
+  <div class="container footer-closing">
+    <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <rect width="100" height="100" fill="#16160f"/>
+      <polygon points="100,0 100,100 0,100" fill="#6e1423"/>
+      <g stroke="#f7f5ee" stroke-width="9" stroke-linecap="round" fill="none">
+        <line x1="30" y1="26" x2="30" y2="74"/>
+        <line x1="58" y1="26" x2="58" y2="74"/>
+        <line x1="30" y1="50" x2="80" y2="50"/>
+        <line x1="58" y1="26" x2="80" y2="26"/>
+      </g>
+    </svg>
+    <p class="footer-quote">«Atrévete a pensar por ti mismo.»<cite>— Kant</cite></p>
+  </div>
   <div class="container footer-inner">
     <p>© 2026 Héctor Fernández López de Coca</p>
     <p class="footer-note">Diseñado y construido con <span>Claude Code</span></p>
   </div>
 </footer>
+
+<!-- ===================== MODAL DE TRABAJO ===================== -->
+<div class="work-modal" id="work-modal" role="dialog" aria-modal="true" aria-labelledby="work-modal-title" aria-hidden="true" inert>
+  <div class="work-modal-backdrop" id="work-modal-backdrop"></div>
+  <div class="work-modal-dialog">
+    <button type="button" class="work-modal-close" id="work-modal-close" aria-label="Cerrar detalle del proyecto">✕</button>
+    <div class="work-modal-body">
+      <span class="work-modal-category" id="work-modal-category"></span>
+      <h3 class="work-modal-title" id="work-modal-title"></h3>
+      <div class="work-modal-meta" id="work-modal-meta"></div>
+      <p class="work-modal-desc" id="work-modal-desc"></p>
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carousel-track"></div>
+        <button type="button" class="carousel-arrow carousel-arrow-prev" id="carousel-prev" aria-label="Slide anterior">←</button>
+        <button type="button" class="carousel-arrow carousel-arrow-next" id="carousel-next" aria-label="Slide siguiente">→</button>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
